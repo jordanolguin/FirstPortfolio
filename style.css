@@ -1,3 +1,175 @@
 body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.header {
+  font-size: 150%;
+  color: grey;
+  text-shadow: 1px 1px #ffff00e1;
+  padding-left: 2%;
+}
+
+nav {
+  text-align: right;
+  margin-top: -2%;
+}
+
+button {
+  width: 150px;
+  margin: auto;
+  font-size: 80%;
+  color: grey;
+  background-color: #000000;
+  border: none;
+}
+button:hover {
+  color: #ffffff;
+}
+
+button:active {
+  font-size: 70%;
+  color: #ffffffaf;
+}
+
+button:focus {
+  outline: none;
+  color: #ffffff;
+}
+
+.banner {
+  text-align: right;
+  font-size: 150%;
+  background-image: url(https://images.unsplash.com/photo-1683860243214-b68a21a261b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3024&q=80);
+  background-color: #ffffff;
+  color: grey;
+  text-shadow: 2px 2px #ffff00e1;
+  padding-top: 1%;
+  padding-right: 10%;
+  padding-bottom: 0.5%;
+  margin-bottom: 2%;
+}
+
+.aboutMe,
+.resume,
+.work,
+.contactMe {
+  display: inline-flex;
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 200px;
+}
+
+.work {
+  height: 510px;
+}
+
+h2 {
+  text-align: center;
+  color: grey;
+  text-shadow: 1px 1px #ffff00e1;
+  font-size: 170%;
+  border-right: 2px dashed #ffffff;
+  padding-bottom: 1%;
+}
+
+#Sides {
+  margin: 10px auto;
+  padding-right: 2%;
+}
+
+img {
+  border-radius: 50%;
+  width: 50%;
+}
+
+img,
+#Sides {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+#content {
+  padding-left: 2%;
+}
+
+#main-card {
+  display: inline-flex;
+  border: 1px solid #ffffff;
+  height: 200px;
+  width: 732px;
+  margin-bottom: 2%;
+  margin-left: 0.5%;
+}
+
+#card1,
+#card2,
+#card3,
+#card4 {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1px solid #ffffff;
+  height: 150px;
+  width: 350px;
+  margin: 1%;
+}
+
+#card-container {
+  padding-left: 2%;
+}
+
+#main-card {
+  background-image: url(https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-color: aquamarine;
+}
+
+#card1 {
+  background-image: url(https://images.unsplash.com/photo-1545164415-0fae860defbd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-color: blue;
+}
+
+#card2 {
+  background-image: url(https://images.unsplash.com/photo-1527800792452-506aacb2101f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80);
+  background-color: azure;
+}
+
+#card3 {
+  background-image: url(https://images.unsplash.com/photo-1614481327033-68e5df399653?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1008&q=80);
+  background-color: aliceblue;
+}
+
+#card4 {
+  background-image: url(https://images.unsplash.com/photo-1480694313141-fce5e697ee25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
   background-color: black;
+}
+
+#card-title {
+  border: none;
+  background-color: none;
+  color: #ffffff;
+  padding-left: 5%;
+}
+
+footer {
+  font-size: 120%;
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  article {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  header {
+    text-align: center;
+  }
 }
